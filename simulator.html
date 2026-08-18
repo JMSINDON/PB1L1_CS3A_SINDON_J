@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ang Unang Blockchain ni Haylily</title>
+    <link rel="stylesheet" href="css/sim.css">
+</head>
+
+<body>
+    <!-- Main container -->
+    <div class="container">
+        <!-- Page heading -->
+        <h1>Ang Unang Blockchain ni Haylily</h1>
+        <!-- Page description -->
+        <p class="subtitle">
+            Add Blocks, Inspect Hashes, and see how Tampering breaks The Chain
+        </p>
+        <!-- Blockchain controls -->
+        <section class="controls">
+            <input id="blockData" type="text" placeholder="Enter Block Data" />
+            <button id="addBlockBtn">Add Block</button>
+            <button id="validateBtn">Validate Chain</button>
+        </section>
+        <!-- Section where blockchain blocks are displayed -->
+        <section>
+            <div id="chain" class="chain"></div>
+        </section>
+        <!-- Blockchain status section -->
+        <section class="status-wrap">
+            <h2>Chain Status</h2>
+            <!-- Displays whether the blockchain is valid or invalid -->
+            <div id="status" class="status valid">
+                <h3>Chain is Valid</h3>
+            </div>
+        </section>
+
+    </div>
+    <!-- CryptoJS library for SHA-256 hashing -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
+    <!-- JavaScript file for blockchain functionality -->
+    <script src="js/sim.js"></script>
+
+</body>
+
+</html>
